@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as ny
 class Univariate():
     import pandas as pd
     def getQuanQual(dataset):
@@ -12,8 +13,7 @@ class Univariate():
         return quan, qual
     
     
-    def getDescriptiveWithUnivariatesValues(dataset, quan, pd, ny):
-        import pandas as pd
+    def getDescriptiveWithUnivariatesValues(dataset, quan): 
         descriptive = pd.DataFrame(index=["Mean", "Median", "Mode", "0%", "1%", 
                                       "Q1:25%", "Q2:50%", "Q3:75%", "99%", 
                                       "Q4:100%","IQR","Lesser_Outliner", 
